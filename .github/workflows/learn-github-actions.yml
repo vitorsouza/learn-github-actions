@@ -19,6 +19,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
-      - run: javac --release 21 --enable-preview HelloWorld.java
-      - run: java --enable-preview HelloWorld
+      - run: |
+        javac --release 21 --enable-preview HelloWorld.java
+        java --enable-preview HelloWorld
 
