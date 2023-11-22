@@ -23,6 +23,6 @@ jobs:
           java-version: '21'
       - name: Run Hello World!
         run: |
-        javac --release 21 --enable-preview HelloWorld.java
-        java --enable-preview HelloWorld
+          javac --release 21 --enable-preview HelloWorld.java
+          java --enable-preview HelloWorld
 
