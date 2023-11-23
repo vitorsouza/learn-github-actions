@@ -15,4 +15,4 @@ jobs:
           First_Name: Amy
       - name: Check OS
         if: runner.os != 'Windows'
-        run: echo "I see you run $RUNNER_OS instead of Windows. Good choice! :)"
+        run: echo "I see you run $RUNNER_OS instead of Windows. Noice! :)"
