@@ -10,7 +10,7 @@ jobs:
       Greeting: Hello
     steps:
       - name: Greeting
-        run: echo "$Greeting $First_Name. My name is $MY_NAME. $WELCOME_TEXT"
+        run: echo "$Greeting $First_Name. My name is $MY_NAME. ${{ vars.WELCOME_TEXT }}"
         env:
           First_Name: Amy
       - name: Check OS
