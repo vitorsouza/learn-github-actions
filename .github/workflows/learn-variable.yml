@@ -1,0 +1,18 @@
+name: learn-variables
+on:
+  push
+env:
+  MY_NAME: Jake
+jobs:
+  greet:
+    runs-on: macos-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: Greeting
+        run: echo "$Greeting $First_Name. My name is $MY_NAME. $WELCOME_TEXT"
+        env:
+          First_Name: Amy
+      - name: Check OS
+        if: runner.os != 'Windows'
+        run: echo "I see you run $RUNNER_OS instead of Windows. Good choice! :)"
